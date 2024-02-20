@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Shoot : MonoBehaviour
@@ -61,6 +62,10 @@ public class Shoot : MonoBehaviour
         if(Physics.Raycast(disparoRay, out disparoHit, rango, disparableMask))
         {
                 //Daño al enemigo
+                EnemyHeal enemyHeal = disparoHit.collider.GetComponent<EnemyHeal>();
+                if (enemyHeal != null) {
+                    enemyHeal.damageRecibido(damege, disparoHit.point);
+                }
 
                 disparoLine.SetPosition(1,disparoHit.point);
 

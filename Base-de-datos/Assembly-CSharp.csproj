@@ -65,7 +65,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Scripts/ColiderCicle.cs" />
+    <Compile Include="Assets/Scripts/EnemyHeal.cs" />
     <Compile Include="Assets/Scripts/TrigerScript.cs" />
+    <Compile Include="Assets/Scripts/MoveEnemy.cs" />
     <Compile Include="Assets/Scripts/Player.cs" />
     <Compile Include="Assets/Scripts/CameraFollow.cs" />
     <Compile Include="Assets/Scripts/Shoot.cs" />
